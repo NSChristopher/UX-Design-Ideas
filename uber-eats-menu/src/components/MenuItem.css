@@ -1,0 +1,124 @@
+.menu-item {
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  background: white;
+}
+
+.menu-item-content {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.menu-item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.item-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.item-description {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.item-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  background: #f5f5f5;
+  color: #666;
+}
+
+.badge-mostLiked {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.badge-popular {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.badge-chefsFavorite {
+  background: #f3e5f5;
+  color: #6a1b9a;
+}
+
+.badge-vegetarian {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.badge-vegan {
+  background: #e8f5e9;
+  color: #1b5e20;
+}
+
+.badge-spicy {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.badge-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.badge-text {
+  line-height: 1;
+}
+
+.item-price {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+  margin: 4px 0 0 0;
+}
+
+.menu-item-image {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.menu-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .menu-item {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .menu-item-image {
+    width: 120px;
+    height: 120px;
+  }
+}
